@@ -9,9 +9,9 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
 import android.view.View
-import android.widget.ProgressBar
 import android.widget.Toast
-import com.google.firebase.auth.FirebaseAuth
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.activity_sign_up.*
 import java.io.ByteArrayOutputStream
@@ -20,45 +20,62 @@ class SignUp : AppCompatActivity() {
 
     val REQUEST_IMAGE_CAPTURE = 100
     private lateinit var imageUri: Uri
+    private lateinit var viewModel: AuthViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
+        initViewModel()
+        setupObservers()
         profile_image.setOnClickListener {
             takePicture()
         }
     }
 
+    private fun initViewModel() {
+        viewModel = ViewModelProvider(this).get(AuthViewModel::class.java)
+    }
+
+    private fun setupObservers(){
+        viewModel.apply {
+            getRegistrationStatus().observe(this@SignUp, Observer {
+                when(it){
+                    AuthEvents.SIGNUP_SUCCESS->{
+                        startActivity(Intent(this@SignUp,Home::class.java))
+                    }
+                    AuthEvents.SIGNUP_FAILED->{
+                        Toast.makeText(this@SignUp, "SignUp Failed", Toast.LENGTH_SHORT).show()
+                    }
+
+                }
+            })
+//            events.observe(this@SignUp, Observer {
+//                when(it){
+//                    SignupEvents.SIGNUP_SUCCESS->{
+//                        startActivity(Intent(this@SignUp,Home::class.java))
+//                    }
+//                    SignupEvents.SIGNUP_FAILED->{
+//                        Toast.makeText(this@SignUp, "SignUp Failed", Toast.LENGTH_SHORT).show()
+//                    }
+//                }
+//            })
+        }
+    }
+
     fun signupClicked(view: View) {
 
-        if (::imageUri.isInitialized) {
+     //   if (::imageUri.isInitialized) {
             if (et_name.text.isNotEmpty() &&
                 et_email.text.isNotEmpty() &&
                 et_pass.text.isNotEmpty()
-            ) {
-                FirebaseAuth.getInstance()
-                    .createUserWithEmailAndPassword(
-                        et_email.text.toString(),
-                        et_pass.text.toString()
-                    )
-                    .addOnCompleteListener {regTask->
-                        if(regTask.isSuccessful){
-
-                        }else{
-                            Toast.makeText(this, "Signup Failed", Toast.LENGTH_SHORT).show()
-                        }
-
-                    }
-
-
-            } else {
-                Toast.makeText(this, "Fill all fields", Toast.LENGTH_SHORT).show()
+            ){
+                viewModel.registerUser(et_name.text.toString(),et_email.text.toString(),et_pass.text.toString(),null)
             }
 
 
-        } else {
-            Toast.makeText(this, "Please upload your image", Toast.LENGTH_SHORT).show()
-        }
+//        } else {
+//            Toast.makeText(this, "Please upload your image", Toast.LENGTH_SHORT).show()
+//        }
     }
 
     fun takePicture() {
