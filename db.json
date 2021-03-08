@@ -1,0 +1,108 @@
+{
+  "posts":{
+ "Marvel": [
+   {
+"name": "Captain America",
+"realname": "Steve Rogers",
+"team": "Avengers",
+"firstappearance": "1941",
+"createdby": "Joe Simon",
+"publisher": "Marvel Comics",
+"imageurl": "https://www.simplifiedcoding.net/demos/marvel/captainamerica.jpg",
+"bio": "Steven Rogers was born in the Lower East Side of Manhattan, New York City, in 1925 to poor Irish immigrants, Sarah and Joseph Rogers.[54] Joseph died when Steve was a child, and Sarah died of pneumonia while Steve was a teen. By early 1940, before America's entry into World War II, Rogers is a tall, scrawny fine arts student specializing in illustration and a comic book writer "
+},
+   {
+"name": "Iron Man",
+"realname": "Tony Stark",
+"team": "Avengers",
+"firstappearance": "1963",
+"createdby": "Stan Lee",
+"publisher": "Marvel Comics",
+"imageurl": "https://www.simplifiedcoding.net/demos/marvel/ironman.jpg",
+"bio": "Anthony Edward Stark, the son of wealthy industrialist and head of Stark Industries, Howard Stark, and Maria Stark. A boy genius, he enters MIT at the age of 15 to study electrical engineering and later receives master's degrees in electrical engineering and physics. After his parents are killed in a car accident, he inherits his father's company"
+   },
+   {
+"name": "Wolvarine",
+"realname": "James Howlett",
+"team": "X-Men",
+"firstappearance": "1974",
+"createdby": "Len Wein",
+"publisher": "Marvel Comics",
+"imageurl": "https://www.simplifiedcoding.net/demos/marvel/logan.jpg",
+"bio": "Wolverine was born James Howlett in northern Alberta, Canada, during the late 1880s, purportedly to rich farm owners John and Elizabeth Howlett,[27] though he is actually the illegitimate son of the Howletts' groundskeeper, Thomas Logan. After Thomas is thrown off the Howletts' property for an attempted rape perpetrated by his other son, named simply Dog, he returns to the Howlett manor and kills John Howlett. In retaliation, young James kills Thomas with bone claws that emerge from the back of his hands, as his mutation manifests. He flees with his childhood companion, Rose, and grows into manhood on a mining colony in the Yukon, adopting the name Logan. When Logan accidentally kills Rose with his claws, he flees the colony and lives in the wilderness among wolves, until he is captured and placed in a circus. Saul Creed, brother of Victor Creed, frees Logan, but after he betrays Logan and Clara Creed to Nathaniel Essex, Logan drowns Creed in Essex's potion. Logan returns to civilization, residing with the Blackfoot people. Following the death of his Blackfoot lover, Silver Fox, at the hands of Victor Creed, now known as Sabretooth,[34] he is ushered into the Canadian military during World War I. Logan spends time in Madripoor before settling in Japan, where he marries Itsu and has a son, Daken. Logan is unaware of his son for many years."
+},
+{
+"name": "Spiderman",
+"realname": "Peter Parker",
+"team": "Avengers",
+"firstappearance": "1962",
+"createdby": "Stan Lee",
+"publisher": "Marvel Comics",
+"imageurl": "https://www.simplifiedcoding.net/demos/marvel/spiderman.jpg",
+"bio": "In Forest Hills, Queens, New York,[43] Midtown High School student Peter Parker is a science-whiz orphan living with his Uncle Ben and Aunt May. As depicted in Amazing Fantasy #15 (Aug. 1962), he is bitten by a radioactive spider (erroneously classified as an insect in the panel) at a science exhibit and acquires the agility and proportionate strength of an arachnid.[44] Along with super strength, Parker gains the ability to adhere to walls and ceilings. Through his native knack for science, he develops a gadget that lets him fire adhesive webbing of his own design through small, wrist-mounted barrels. Initially seeking to capitalize on his new abilities, Parker dons a costume and, as Spider-Man, becomes a novelty television star. However, He blithely ignores the chance to stop a fleeing thief, [and] his indifference ironically catches up with him when the same criminal later robs and kills his Uncle Ben. Spider-Man tracks and subdues the killer and learns, in the story's next-to-last caption"
+},
+{
+"name": "Thor",
+"realname": "Thor Odinson",
+"team": "Avengers",
+"firstappearance": "1962",
+"createdby": "Stan Lee",
+"publisher": "Marvel Comics",
+"imageurl": "https://www.simplifiedcoding.net/demos/marvel/thor.jpg",
+"bio": "Thor's father Odin decides his son needed to be taught humility and consequently places Thor (without memories of godhood) into the body and memories of an existing, partially disabled human medical student, Donald Blake.[52] After becoming a doctor and on vacation in Norway, Blake witnesses the arrival of an alien scouting party. Blake flees from the aliens into a cave. After discovering Thor's hammer Mjolnir (disguised as a walking stick) and striking it against a rock, he transforms into the thunder god.[53] Later, in Thor #159, Blake is revealed to have always been Thor, Odin's enchantment having caused him to forget his history as The Thunder God and believe himself mortal"
+}
+ 
+ ],
+  "MortalKombat":[
+    {
+"id": 1,
+"title": "kabal",
+"image": "https://i.ibb.co/7n2x9V9/images.jpg"
+},
+{
+"id": 2,
+"title": "Scorpion",
+"image": "https://i.ibb.co/wsM1wr9/0956089226fe3fad0a9da14dcf82ae43.jpg"
+},
+{
+"id": 3,
+"title": "Raiden",
+"image": "https://i.ibb.co/23c33Wf/217272.jpg"
+},
+{
+"id": 4,
+"title": "Liu Kang",
+"image": "https://i.ibb.co/FHyw95v/mortak-kombat-x-mkx-liu-kang-2036.jpg"
+},
+{
+"id": 5,
+"title": "Kotal Kahn",
+"image": "https://i.ibb.co/ZMdfN4F/da068s4-dbbb972d-8459-4bca-a4bd-8faedcf464af.png"
+},
+{
+"id": 6,
+"title": "predator",
+"image": "https://i.ibb.co/g68jFhB/predator-mortal-kombat-x-wallpaper-1024x768-wallpaper.jpg"
+},
+{
+"id": 7,
+"title": "Sub-Zero",
+"image": "https://i.ibb.co/MRwkq03/sub-zero-character-render.jpg"
+},
+{
+"id": 8,
+"title": "Freddy Krugger",
+"image": "https://i.ibb.co/XyM80fN/fredy.jpg"
+},
+{
+"id": 9,
+"title": "Quan Chi",
+"image": "https://i.ibb.co/PcvgkSc/quan.jpg"
+}
+  ]
+  },
+ "details":{
+  "linksfordetails":"https://www.denofgeek.com/us/games/mortal-kombat/248595/mortal-kombat-timeline-story-explained",  
+   "videolinkyoutube":"https://www.youtube.com/watch?v=owmGwDsOzm8"
+ }
+   }
